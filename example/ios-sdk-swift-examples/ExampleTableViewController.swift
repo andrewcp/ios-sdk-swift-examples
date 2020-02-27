@@ -17,8 +17,29 @@ class ExampleTableViewController: UITableViewController {
         super.viewDidLoad()
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
+        let userDefaults = UserDefaults.standard
+        let barButton = UIBarButtonItem(title: "Normal mode", style: UIBarButtonItemStyle.plain, target: self, action: #selector(buttonClick(sender:)))
+        let buttonTile = userDefaults.object(forKey: "mode") as? String
+        if (buttonTile == "Low power mode"){
+            barButton.title = buttonTile
+        }
+        
+        self.navigationItem.rightBarButtonItem = barButton
+        
         loadData()
         setUpHUD()
+    }
+    
+    @objc func buttonClick(sender: UIBarButtonItem){
+        let buttonTitle = self.navigationItem.rightBarButtonItem?.title
+        let userDefaults = UserDefaults.standard
+        if(buttonTitle == "Normal mode"){
+            self.navigationItem.rightBarButtonItem?.title = "Low power mode"
+            userDefaults.set("Low power mode", forKey: "mode")
+        }else{
+            self.navigationItem.rightBarButtonItem?.title = "Normal mode"
+            userDefaults.set("Normal mode", forKey: "mode")
+        }
     }
     
     override func didReceiveMemoryWarning() {

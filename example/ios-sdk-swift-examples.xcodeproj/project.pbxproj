@@ -142,8 +142,9 @@
 				TargetAttributes = {
 					BC4017AA1CBCF00D007332F4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = BX8U4E3C2D;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -186,7 +187,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ios-sdk-swift-examples/Pods-ios-sdk-swift-examples-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ios-sdk-swift-examples/Pods-ios-sdk-swift-examples-frameworks.sh",
 				"${PODS_ROOT}/IndoorAtlas/indooratlas-ios-sdk/IndoorAtlas.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
@@ -197,7 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-sdk-swift-examples/Pods-ios-sdk-swift-examples-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-sdk-swift-examples/Pods-ios-sdk-swift-examples-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B3F62799147A638622EA9FEC /* [CP] Check Pods Manifest.lock */ = {
@@ -351,10 +352,10 @@
 			baseConfigurationReference = 37D70F96E9627BD7CA6C0887 /* Pods-ios-sdk-swift-examples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BX8U4E3C2D;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-sdk-swift-examples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -371,10 +372,10 @@
 			baseConfigurationReference = 3D87ADC8456ADF0CD3DD2634 /* Pods-ios-sdk-swift-examples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BX8U4E3C2D;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-sdk-swift-examples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,0 +1,28 @@
+PODS:
+  - IndoorAtlas (3.1.4)
+  - SVProgressHUD (2.2.6)
+
+DEPENDENCIES:
+  - IndoorAtlas (= 3.1.4)
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+
+SPEC REPOS:
+  https://github.com/IndoorAtlas/CocoaPods-Specs.git:
+    - IndoorAtlas
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 4fdf3fdc8703fd9915dae33fc1363c604a06b24e
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  IndoorAtlas: 5713fe23813a745d590d2c1fcb6b7d1a0b53c8e9
+  SVProgressHUD: 6ed134667e9ebb2f33679e8273cd48fd3fa349e5
+
+PODFILE CHECKSUM: 74c3446543d6c4b85e2594c30bd534750cd27f3c
+
+COCOAPODS: 1.7.5

@@ -114,6 +114,12 @@ class ImageViewController: UIViewController, IALocationManagerDelegate {
         
         manager.lockIndoors(true)
         
+        let userDefaults = UserDefaults.standard
+        if(userDefaults.object(forKey: "mode") as? String == "Low power mode"){
+            manager.desiredAccuracy = ia_location_accuracy.iaLocationAccuracyLow
+        }else{
+            manager.desiredAccuracy = ia_location_accuracy.iaLocationAccuracyBest
+        }
         // Request location updates
         manager.startUpdatingLocation()
     }

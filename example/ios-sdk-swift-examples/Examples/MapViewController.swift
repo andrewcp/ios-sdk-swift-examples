@@ -279,12 +279,15 @@ class MapViewController: UIViewController, IALocationManagerDelegate, MKMapViewD
     func requestLocation() {
 
         locationManager.delegate = self
-        
+        let userDefaults = UserDefaults.standard
         // Set the desired accuracy of location updates to one of the following:
         // kIALocationAccuracyBest : High accuracy mode (default)
         // kIALocationAccuracyLow : Low accuracy mode, uses less power
-        locationManager.desiredAccuracy = ia_location_accuracy.iaLocationAccuracyBest
-
+        if(userDefaults.object(forKey: "mode") as? String == "Low power mode"){
+            locationManager.desiredAccuracy = ia_location_accuracy.iaLocationAccuracyLow
+        }else{
+            locationManager.desiredAccuracy = ia_location_accuracy.iaLocationAccuracyBest
+        }
         locationManager.startUpdatingLocation()
     }
     
