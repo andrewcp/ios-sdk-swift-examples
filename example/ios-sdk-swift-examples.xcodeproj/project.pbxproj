@@ -144,7 +144,7 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = BX8U4E3C2D;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -354,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BX8U4E3C2D;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-sdk-swift-examples/Info.plist";
@@ -362,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.indooratlas.ios-sdk-swift-examples";
 				PRODUCT_NAME = "swift-examples";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "CPA Development";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -374,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BX8U4E3C2D;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ios-sdk-swift-examples/Info.plist";
@@ -382,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.indooratlas.ios-sdk-swift-examples";
 				PRODUCT_NAME = "swift-examples";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "CPA Development";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
